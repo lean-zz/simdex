@@ -1,0 +1,52 @@
+
+
+
+workers:
+  - active: true
+    tmp: false
+    efficiency: 1.0
+  - active: false
+    tmp: false
+    efficiency: 1.0
+  - active: false
+    tmp: false
+    efficiency: 1.0
+  - active: false
+    tmp: false
+    efficiency: 1.0
+
+  - active: false
+    temp: true
+    efficiency: 1.5
+  - active: false
+    temp: true
+    efficiency: 1.5
+  - active: false
+    temp: true
+    efficiency: 1.5
+  - active: false
+    temp: true
+    efficiency: 1.5
+  - active: false
+    temp: true
+    efficiency: 1.5
+ - active: false
+    temp: true
+    efficiency: 1.5
+
+
+
+
+dispatcher: 
+  experiments.mpc.dispatcher.mpcDispatcher
+
+
+sa_strategy: 
+  experiments.mpc.sa_strategy.mpcSelfAdaptingStrategy
+
+period: 60
+
+
+metrics:
+  - metrics.default.JobDelayMetricsCollector
+  - metrics.default.PowerMetricsCollector

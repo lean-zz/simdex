@@ -1,0 +1,118 @@
+
+# 10个正式员工，20个临时工
+
+workers:
+  - active: true
+    tmp: false
+    efficiency: 1.0
+  - active: false
+    tmp: false
+    efficiency: 1.0
+  - active: false
+    tmp: false
+    efficiency: 1.0
+  - active: false
+    tmp: false
+    efficiency: 1.0
+  - active: false
+    tmp: false
+    efficiency: 1.0
+  - active: false
+    tmp: false
+    efficiency: 1.0
+  - active: false
+    tmp: false
+    efficiency: 1.0
+  - active: false
+    tmp: false
+    efficiency: 1.0
+  - active: false
+    tmp: false
+    efficiency: 1.0
+  - active: false
+    tmp: false
+    efficiency: 1.0
+
+
+
+    
+
+
+  - active: false
+    temp: true
+    efficiency: 1.5
+  - active: false
+    temp: true
+    efficiency: 1.5
+  - active: false
+    temp: true
+    efficiency: 1.5
+  - active: false
+    temp: true
+    efficiency: 1.5
+  - active: false
+    temp: true
+    efficiency: 1.5
+  - active: false
+    temp: true
+    efficiency: 1.5
+  - active: false
+    temp: true
+    efficiency: 1.5
+  - active: false
+    temp: true
+    efficiency: 1.5
+  - active: false
+    temp: true
+    efficiency: 1.5
+  - active: false
+    temp: true
+    efficiency: 1.5
+  - active: false
+    temp: true
+    efficiency: 1.5
+  - active: false
+    temp: true
+    efficiency: 1.5
+  - active: false
+    temp: true
+    efficiency: 1.5
+  - active: false
+    temp: true
+    efficiency: 1.5
+  - active: false
+    temp: true
+    efficiency: 1.5
+  - active: false
+    temp: true
+    efficiency: 1.5
+  - active: false
+    temp: true
+    efficiency: 1.5
+  - active: false
+    temp: true
+    efficiency: 1.5
+  - active: false
+    temp: true
+    efficiency: 1.5
+  - active: false
+    temp: true
+    efficiency: 1.5
+
+
+
+dispatcher: 
+  experiments.data_collection.dispatcher.DataCollectionDispatcher
+
+
+sa_strategy: 
+  experiments.data_collection.sa_strategy.DataCollectionSelfAdaptingStrategy
+
+period: 60
+
+
+metrics:
+  - metrics.default.JobDelayMetricsCollector
+  - metrics.default.PowerMetricsCollector
+
+
