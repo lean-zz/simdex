@@ -50,6 +50,7 @@ if __name__ == "__main__":
         sys.stdout.flush()
 
     # read data and run the simulation
+    # 默认limit是10亿个job 但实际远远小于这个数目，这个参数没有意义
     limit = args.limit
     counter = 0
     for job in reader:

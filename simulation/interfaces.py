@@ -12,7 +12,7 @@ class AbstractMetricsCollector:
     def snapshot(self, ts, workers):
         pass  # an empty placeholder that just declares the interface
 
-    def job_finished(self, job):
+    def job_finished(self, job, ts, period_a=120, period_m=10):
         pass  # an empty placeholder that just declares the interface
 
     def print(self, machine=False, verbose=False):

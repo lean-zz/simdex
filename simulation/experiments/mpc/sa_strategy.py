@@ -26,7 +26,7 @@ def do_adapt(self, ts, dispatcher, workers, job, pd, pmd):
     
     for worker in workers:
         if worker.get_attribute("active"):
-            if worker.get_attribute("tmp"):
+            if worker.get_attribute("temp"):
                 active_worker_tmp.append(worker)
                 active_tmp += 1
             else:
@@ -34,7 +34,7 @@ def do_adapt(self, ts, dispatcher, workers, job, pd, pmd):
                 active_reg += 1
 
         else:
-            if worker.get_attribute("tmp"):
+            if worker.get_attribute("temp"):
                 inactive_worker_tmp.append(worker)
                 inactive_tmp += 1
             else:

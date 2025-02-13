@@ -29,13 +29,19 @@ class Job:
     start_ts: float = 0.0  # when the processing of the job actually started (simulation time)
     finish_ts: float = 0.0  # when the processing ended (start_ts + duration by default)
 
-    def enqueue(self, prev_job=None):
+
+    # 传入的prev_job属性 来指导
+    # 所谓的enqueue本身也只是 在job实例自己的属性中 记录一下start time和finish time，并没有真正的入队列，
+    def enqueue(self, prev_job=None, efficiency=1.0):
         """Update start and finish times when the job is placed in a queue."""
         if prev_job is None:
             self.start_ts = self.spawn_ts  # job starts immediately as spawned
         else:
             self.start_ts = prev_job.finish_ts  # job starts right after previous job ends
-        self.finish_ts = self.start_ts + self.duration
+        self.finish_ts = self.start_ts + self.duration*efficiency
+
+
+
 
 
 @dataclass

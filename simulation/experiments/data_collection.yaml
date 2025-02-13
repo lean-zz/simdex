@@ -105,7 +105,8 @@ dispatcher:
   experiments.data_collection.dispatcher.DataCollectionDispatcher
 
 
-sa_strategy: 
+sa_strategy:
+
   experiments.data_collection.sa_strategy.DataCollectionSelfAdaptingStrategy
 
 period: 60
